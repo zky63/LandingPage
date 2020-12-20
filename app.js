@@ -14,7 +14,8 @@ reqButton.addEventListener('click', function(){
         errorText.classList.add('textContainer__error--visible');
     }
     else if (inputValue && inputValue.includes('@')) {
-        errorText.classList.toggle('textContainer__error--visible');
+        errorText.innerText = '.';
+        errorText.style.color = 'black';
     }
 })
 

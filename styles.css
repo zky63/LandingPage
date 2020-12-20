@@ -234,7 +234,7 @@ body {
         width: 315px;
         height:17px;
         position: absolute;
-        margin-top: -70px; 
+        margin-top: -200px; 
         display: inline-flex;
         justify-content: space-between;
         align-items: center;
@@ -272,4 +272,20 @@ body {
         font-family: 'Chivo';
     }
 
+    .textContainer__error--visible {
+        font-family: 'Chivo';
+        color: rgba(251, 62, 62, 1);
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 104px;
+        margin-left: 32px;
+        /* border: solid orange 1px;  */
+    }
+
+    .textContainer__error--hidden {
+        margin-top: 210px;
+        margin-left: 32px;
+        position: relative;
+        z-index: -1;
+    }
  }
