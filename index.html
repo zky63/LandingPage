@@ -5,15 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;900&display=swap" rel="stylesheet">
+  <link href="styles.css" rel= "stylesheet">
   
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
 <body>
-  Publish your podcasts everywhere.
+  <img src = "assets/desktop/bg-pattern-dots.svg" class = "dots" alt = "dots">
+  <img src = "assets/desktop/logo.svg" class = "logo" alt = "logo">
+  <div class = "mainContainer">
+    <div class = "mainContainer__imgContainer">
 
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
+    </div>
+    <div class = "backgroundContainer">
 
-  Request access
+    </div>
+    <div class = "textContainer">
+      <h1 class = "textContainer__header">
+        <span class = "textContainer__header--green">Publish your podcasts</span> <span class = "textContainer__header--white">everywhere.</span>
+      </h1>
+      <p class = "textContainer__body">
+        Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
+        Apple Podcasts, Google Podcasts, Pocket Casts and more!
+      </p>
+      <input class = "textContainer__input" type = "text" id = "email"  name = "email" placeholder = "Email Address">
+      <button class = "textContainer__input__button" id = "inputButton">Request access</button>
+      
+      <p class = "textContainer__error--hidden" id = "errorText">.</p>
+
+      <div class = "textContainer__logos">
+        <img src = "assets/desktop/spotify.svg" id = "spotify" alt ="spotify">
+        <img src = "assets/desktop/apple-podcast.svg" id = "apple" alt ="apple">
+        <img src = "assets/desktop/google-podcasts.svg" class = "textContainer__logos--small" alt ="google">
+        <img src = "assets/desktop/pocket-casts.svg" id = "pocket" alt ="pocket">
+      </div>
+    </div>
+    </div>
+    
+  </div>
+  
+
+  
+
+  
+<script src = "app.js"></script>
 </body>
 </html>
