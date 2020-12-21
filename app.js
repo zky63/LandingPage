@@ -7,11 +7,11 @@ reqButton.addEventListener('click', function(){
     console.log(inputValue);
     if(!inputValue){
         errorText.innerText = 'Oops! Please add your email';
-        errorText.classList.add('textContainer__error--visible');
+        errorText.style.color = 'red';
     }
     else if (!(inputValue.includes('@')) && inputValue){
         errorText.innerText = 'Oops! Please check your email';
-        errorText.classList.add('textContainer__error--visible');
+        errorText.style.color = 'red';
     }
     else if (inputValue && inputValue.includes('@')) {
         errorText.innerText = '.';
